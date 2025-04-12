@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>نورِ ہدایت</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Nastaliq Urdu", serif;
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            border-bottom: 4px solid #388E3C;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #e91e63;
+        }
+        footer {
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🌙 خوش آمدید نورِ ہدایت ویب سائٹ پر
+    </header>
+    <main>
+        <h1>قرآنی آیت</h1>
+        <p>إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+        <p>بے شک مشکل کے ساتھ آسانی ہے۔</p>
+
+        <h2>حدیث شریف</h2>
+        <p>”مسلمان، مسلمان کا بھائی ہے۔“ (بخاری)</p>
+
+        <div class="countdown">
+            رمضان المبارک کا شمار: <span id="countdown"></span>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 نورِ ہدایت | تمام حقوق محفوظ ہیں
+    </footer>
+
+    <script>
+        function countdown() {
+            const ramadanDate = new Date("2025-03-01T00:00:00");
+            const now = new Date();
+            const diff = ramadanDate - now;
+
+            if (diff <= 0) {
+                document.getElementById("countdown").innerHTML = "رمضان مبارک!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById("countdown").innerHTML =
+                days + " دن " +
+                hours + " گھنٹے " +
+                minutes + " منٹ " +
+                seconds + " سیکنڈ ";
+        }
+
+        setInterval(countdown, 1000);
+        countdown();
+    </script>
+</body>
+</html>
