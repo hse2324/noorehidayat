@@ -7,18 +7,25 @@
     <style>
         body {
             font-family: 'Noto Nastaliq Urdu', serif;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
             direction: rtl;
+            color: #333;
         }
         header {
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+            background: #1e3c72;
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 20px;
         }
         nav {
             background: #16a085;
@@ -35,6 +42,16 @@
         nav a:hover {
             color: #ffd700;
         }
+        .carousel {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
         section {
             padding: 30px;
             background: white;
@@ -49,18 +66,6 @@
             padding: 15px;
             margin-top: 20px;
         }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
         iframe {
             width: 100%;
             height: 400px;
@@ -70,6 +75,25 @@
         audio {
             width: 100%;
             margin-top: 15px;
+        }
+        .courses, .media {
+            display: flex;
+            justify-content: space-between;
+        }
+        .courses div, .media div {
+            width: 30%;
+            padding: 15px;
+            background: #e0f7fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .courses div h3, .media div h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .courses div p, .media div p {
+            text-align: center;
         }
     </style>
 </head>
@@ -88,52 +112,39 @@
         <a href="#contact">رابطہ کریں</a>
     </nav>
 
+    <!-- Carousel for images like a slider -->
+    <div class="carousel">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Kaaba_2020.jpg" alt="خانہ کعبہ">
+    </div>
+
+    <!-- Quran Section -->
     <section id="quran">
         <h2>قرآن پاک</h2>
         <p>"بے شک یہ قرآن اس راستے کی رہنمائی کرتا ہے جو سب سے زیادہ سیدھا ہے۔" (سورۃ الإسراء: 9)</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Quran_cover.jpg" alt="قرآن پاک">
         <audio controls>
             <source src="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/001.mp3" type="audio/mpeg">
             آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
         </audio>
     </section>
 
+    <!-- Hadith Section -->
     <section id="hadith">
         <h2>احادیث مبارکہ</h2>
         <p>نبی کریم ﷺ نے فرمایا: "تم میں سب سے بہتر وہ ہے جو قرآن سیکھے اور دوسروں کو سکھائے۔" (بخاری)</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Hadith_Book.jpg" alt="احادیث مبارکہ">
     </section>
 
+    <!-- Courses Section -->
     <section id="courses">
         <h2>اسلامی کورسز</h2>
-        <ul>
-            <li><a href="https://www.alhudaonline.org/" target="_blank">الہدیٰ آن لائن کورسز</a></li>
-            <li><a href="https://quran.com/ur" target="_blank">قرآن پاک کا ترجمہ اور تفسیر</a></li>
-            <li><a href="https://www.islamicacademy.org/" target="_blank">اسلامک اکیڈمی کورسز</a></li>
-        </ul>
-    </section>
-
-    <section id="media">
-        <h2>اسلامی ویڈیوز</h2>
-        <iframe src="https://www.youtube.com/embed/3G5V1O9EB4A" title="یوتیوب ویڈیو" allowfullscreen></iframe>
-        <h3>نعت شریف</h3>
-        <audio controls>
-            <source src="https://www.youtube.com/watch?v=BhK9-GhU6So" type="audio/mpeg">
-            آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
-        </audio>
-    </section>
-
-    <section id="contact">
-        <h2>رابطہ کریں</h2>
-        <p>اگر آپ کے ذہن میں کوئی سوال ہو یا آپ مشورہ دینا چاہیں، تو ہم سے رابطہ کریں:</p>
-        <p>ای میل: noorehidayat@example.com</p>
-    </section>
-
-    <footer>
-        <p>© 2025 نورِ ہدایت - تمام حقوق محفوظ ہیں</p>
-    </footer>
-
-</body>
-</html>
+        <div class="courses">
+            <div>
+                <h3>تجوید کورس</h3>
+                <p>قرآن کی صحیح تلاوت سیکھیں</p>
+                <a href="https://www.alhudaonline.org/" target="_blank">مزید پڑھیں</a>
+            </div>
+            <div>
+                <h3>فقہ کورس</h3>
+                <p>اسلامی فقہ کی بنیادی معلومات حاصل کریں</p>
+                <a href="https://www.islamicacademy.org/" target="_blank">مزید پڑھیں_
 
 
