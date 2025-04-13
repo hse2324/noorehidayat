@@ -6,134 +6,133 @@
     <title>نورِ ہدایت</title>
     <style>
         body {
-            margin: 0;
             font-family: 'Noto Nastaliq Urdu', serif;
-            background-color: #f4f0e6;
+            background-color: #f9f9f9;
             color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
         }
         header {
-            background-color: #006400;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
             color: white;
+            padding: 30px;
             text-align: center;
-            padding: 20px;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #228B22;
+            background: #16a085;
+            padding: 15px;
+            text-align: center;
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            margin: 0 20px;
             text-decoration: none;
-            font-size: 18px;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            transition: color 0.3s;
         }
         nav a:hover {
-            background-color: #006400;
+            color: #ffd700;
         }
         section {
-            padding: 20px;
-            text-align: center;
-        }
-        .courses img, .gallery img {
-            width: 250px;
-            height: auto;
-            border-radius: 8px;
-            margin: 10px;
-        }
-        audio, video {
-            margin: 10px 0;
-            width: 100%;
-            max-width: 600px;
+            padding: 30px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         footer {
-            background-color: #006400;
+            background: #2c3e50;
             color: white;
             text-align: center;
             padding: 15px;
+            margin-top: 20px;
         }
-        h1, h2 {
-            color: #006400;
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
         }
-        .animated-button {
-            background-color: #228B22;
-            color: white;
-            padding: 10px 20px;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
             border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s;
+            border-radius: 10px;
         }
-        .animated-button:hover {
-            transform: scale(1.1);
-            background-color: #006400;
+        audio {
+            width: 100%;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Kaaba_Masjid_al-Haram_Mecca.jpg" alt="خانہ کعبہ">
         <h1>نورِ ہدایت</h1>
-        <p>قرآن و حدیث سے روشن راہ</p>
+        <p>روشنی کا سفر، علم کے ساتھ</p>
     </header>
 
     <nav>
-        <a href="#courses">کورسز</a>
-        <a href="#media">میڈیا</a>
-        <a href="#gallery">گیلری</a>
+        <a href="#quran">قرآن پاک</a>
+        <a href="#hadith">احادیث مبارکہ</a>
+        <a href="#courses">اسلامی کورسز</a>
+        <a href="#media">اسلامی ویڈیوز</a>
         <a href="#contact">رابطہ کریں</a>
     </nav>
 
+    <section id="quran">
+        <h2>قرآن پاک</h2>
+        <p>"بے شک یہ قرآن اس راستے کی رہنمائی کرتا ہے جو سب سے زیادہ سیدھا ہے۔" (سورۃ الإسراء: 9)</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Quran_cover.jpg" alt="قرآن پاک">
+        <audio controls>
+            <source src="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/001.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
+        </audio>
+    </section>
+
+    <section id="hadith">
+        <h2>احادیث مبارکہ</h2>
+        <p>نبی کریم ﷺ نے فرمایا: "تم میں سب سے بہتر وہ ہے جو قرآن سیکھے اور دوسروں کو سکھائے۔" (بخاری)</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Hadith_Book.jpg" alt="احادیث مبارکہ">
+    </section>
+
     <section id="courses">
-        <h2>ہمارے کورسز</h2>
-        <div class="courses">
-            <h3>تجوید کورس</h3>
-            <img src="https://i.ytimg.com/vi/lVPkUtDQIn0/maxresdefault.jpg" alt="تجوید">
-
-            <h3>حدیث کورس</h3>
-            <img src="https://www.thaqalayn.net/images/hadith.jpg" alt="حدیث">
-
-            <h3>فقہ کورس</h3>
-            <img src="https://www.islamic-relief.org/wp-content/uploads/2020/09/Islamic-relief-mosque-1024x684.jpg" alt="فقہ">
-        </div>
+        <h2>اسلامی کورسز</h2>
+        <ul>
+            <li><a href="https://www.alhudaonline.org/" target="_blank">الہدیٰ آن لائن کورسز</a></li>
+            <li><a href="https://quran.com/ur" target="_blank">قرآن پاک کا ترجمہ اور تفسیر</a></li>
+            <li><a href="https://www.islamicacademy.org/" target="_blank">اسلامک اکیڈمی کورسز</a></li>
+        </ul>
     </section>
 
     <section id="media">
-        <h2>اسلامی میڈیا</h2>
-        <h3>نعت: ہم نے آنکھوں سے دیکھا نہیں</h3>
+        <h2>اسلامی ویڈیوز</h2>
+        <iframe src="https://www.youtube.com/embed/3G5V1O9EB4A" title="یوتیوب ویڈیو" allowfullscreen></iframe>
+        <h3>نعت شریف</h3>
         <audio controls>
-            <source src="https://www.naataudio.com/wp-content/uploads/2021/02/Hum-Nay-Aankhon-Say-Dekha-Nahi.mp3" type="audio/mpeg">
+            <source src="https://www.youtube.com/watch?v=BhK9-GhU6So" type="audio/mpeg">
+            آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
         </audio>
-
-        <h3>بچوں کی قرآن پڑھنے کی ویڈیو</h3>
-        <video controls>
-            <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
-        </video>
-    </section>
-
-    <section id="gallery">
-        <h2>گیلری</h2>
-        <div class="gallery">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Masjid_Nabawi_Front.jpg" alt="مدینہ منورہ">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Masjid_al-Haram_Makkah.jpg" alt="خانہ کعبہ">
-        </div>
     </section>
 
     <section id="contact">
         <h2>رابطہ کریں</h2>
-        <p>ہم سے رابطہ کرنے کے لیے ای میل کریں: <strong>noorehidayat@example.com</strong></p>
-        <button class="animated-button">ہم سے رابطہ کریں</button>
+        <p>اگر آپ کے ذہن میں کوئی سوال ہو یا آپ مشورہ دینا چاہیں، تو ہم سے رابطہ کریں:</p>
+        <p>ای میل: noorehidayat@example.com</p>
     </section>
 
     <footer>
-        <p>© 2025 نورِ ہدایت۔ جملہ حقوق محفوظ ہیں۔</p>
+        <p>© 2025 نورِ ہدایت - تمام حقوق محفوظ ہیں</p>
     </footer>
+
 </body>
 </html>
 
