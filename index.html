@@ -1,90 +1,117 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نورِ ہدایت</title>
-    <style>
-        body {
-            font-family: 'Noto Nastaliq Urdu', serif;
-            background: linear-gradient(to right, #fceabb, #fccb90);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #4b3832;
-        }
-        header {
-            background-color: #8e44ad;
-            color: white;
-            padding: 20px;
-            border-bottom: 5px solid #732d91;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            border-radius: 15px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        audio, video {
-            margin: 10px 0;
-            width: 80%;
-            border-radius: 10px;
-        }
-        .gallery img {
-            width: 200px;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نورِ ہدایت</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: #fdf6e3;
+      color: #333;
+    }
+    header {
+      background: #006400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #228B22;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #2E8B57;
+    }
+    section {
+      padding: 20px;
+    }
+    .courses, .gallery, .audio, .contact {
+      margin-bottom: 40px;
+    }
+    .gallery img {
+      width: 100px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #006400;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    audio, video {
+      width: 100%;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🌙 نورِ ہدایت 🌙</h1>
-        <p>اسلامی تعلیمات کا خوبصورت خزانہ</p>
-    </header>
+  <header>
+    <h1>🌙 نورِ ہدایت 🌙</h1>
+    <p>اسلامی علم کا روشن چراغ</p>
+  </header>
+  <nav>
+    <a href="#home">ہوم پیج</a>
+    <a href="#courses">کورسز</a>
+    <a href="#gallery">گیلری</a>
+    <a href="#audio">نعت و آڈیو</a>
+    <a href="#contact">رابطہ کریں</a>
+  </nav>
 
-    <section>
-        <h2>📖 قرآن کی تلاوت</h2>
-        <audio controls>
-            <source src="https://cdn.islamic.network/quran/audio/128/ar.alafasy/001.mp3" type="audio/mpeg">
-            آپ کا براؤزر آڈیو پلیئر سپورٹ نہیں کرتا۔
-        </audio>
-    </section>
+  <section id="home">
+    <h2>خوش آمدید!</h2>
+    <p>"نورِ ہدایت" میں خوش آمدید! یہاں آپ کو قرآن و حدیث، تجوید، فقہ اور دیگر اسلامی علوم سیکھنے کا بہترین موقع ملے گا۔</p>
+  </section>
 
-    <section>
-        <h2>🕋 نعت شریف</h2>
-        <audio controls>
-            <source src="https://download.quranicaudio.com/quran/mishari_al_afasy/surah_112.mp3" type="audio/mpeg">
-            آپ کا براؤزر آڈیو پلیئر سپورٹ نہیں کرتا۔
-        </audio>
-    </section>
+  <section id="courses" class="courses">
+    <h2>📖 اسلامی کورسز</h2>
+    <ul>
+      <li>تجوید کورس</li>
+      <li>حدیث کورس</li>
+      <li>فقہ کورس</li>
+      <li>سیرت النبی ﷺ کورس</li>
+      <li>دعاؤں کا کورس</li>
+    </ul>
+  </section>
 
-    <section>
-        <h2>🖼️ تصویری گیلری</h2>
-        <div class="gallery">
-            <img src="https://i.imgur.com/5cXyyod.jpg" alt="مسجد">
-            <img src="https://i.imgur.com/2D6XfZ9.jpg" alt="قرآن">
-            <img src="https://i.imgur.com/Zq4EosW.jpg" alt="کعبہ">
-        </div>
-    </section>
+  <section id="gallery" class="gallery">
+    <h2>🖼️ اسلامی تصاویر اور ویڈیوز</h2>
+    <img src="https://via.placeholder.com/150?text=%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C+%D8%AA%D8%B5%D9%88%DB%8C%D8%B1" alt="اسلامی تصویر" />
+    <img src="https://via.placeholder.com/150?text=%D8%AD%D8%B1%D9%85+%D9%85%DA%A9%DB%8C" alt="حرم مکی" />
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      آپ کا براؤزر ویڈیو سپورٹ نہیں کرتا۔
+    </video>
+  </section>
 
-    <section>
-        <h2>🎥 ویڈیو</h2>
-        <video controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            آپ کا براؤزر ویڈیو پلیئر سپورٹ نہیں کرتا۔
-        </video>
-    </section>
+  <section id="audio" class="audio">
+    <h2>🎶 نعت شریف اور آڈیو</h2>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      آپ کا براؤزر آڈیو سپورٹ نہیں کرتا۔
+    </audio>
+  </section>
 
-    <footer>
-        <p>© 2025 نورِ ہدایت | تمام حقوق محفوظ ہیں۔</p>
-    </footer>
+  <section id="contact" class="contact">
+    <h2>📞 رابطہ کریں</h2>
+    <p>اگر آپ کو کوئی سوال یا مشورہ ہو تو ہم سے رابطہ کریں:</p>
+    <ul>
+      <li>📧 ای میل: noorehidayat@example.com</li>
+      <li>📱 فون: 1234567890</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 نورِ ہدایت - تمام حقوق محفوظ ہیں۔</p>
+  </footer>
 </body>
 </html>
